@@ -89,12 +89,6 @@ git clone https://github.com/hoorainrajput/ghost-trace.git
 
 ---
 
-## 📸 Preview
-
-> Add screenshots or GIF here for better presentation
-
----
-
 ## 🚀 Future Improvements
 
 - More gesture recognition  
