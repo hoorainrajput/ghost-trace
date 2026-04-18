@@ -149,16 +149,18 @@
 
     h.setOptions({
         maxNumHands: 2,
-        modelComplexity: 1,
+        modelComplexity: 0,
         minDetectionConfidence: 0.65,
-        minTrackingConfidence: 0.65
+        minTrackingConfidence: 0.65,
+        selfieMode: true
     });
 
     h.onResults(onResults);
 
     const cam = new Camera(vElement, {
         onFrame: async () => { await h.send({ image: vElement }); },
-        width: 1280, height: 720
+        // width: 1280, height: 720
+        width: 640, height: 480
     });
     cam.start();
   </script>
